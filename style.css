@@ -133,7 +133,35 @@ a {
     display: flex;
     text-align: center;
     font-size: 14px;
+    font-weight: 450;
     color: gray;
     width: 130px;
     flex-wrap: wrap;
+}
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E5E7EB;
+    padding-top: var(--padding);
+    padding-bottom: 80px;
+}
+
+.quote-container {
+    width: 750px;
+}
+
+.quote-body {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    font-style: italic;
+}
+.quote-attribution {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: end;
+    color:#1F2937;
 }
