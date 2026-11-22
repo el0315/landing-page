@@ -1,5 +1,9 @@
 :root {
-  --padding: 200px;
+    --padding: clamp(20px, 10vw, 200px);
+    --dark-bg: #1F2937;
+    --blue: #3882F6;
+    --light-text: #F9FAF8;
+    --gray-text: #E5E7EB;
 }
 
 * {
@@ -7,6 +11,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: none;
+    appearance: none;
+    background: none;
+}
+
+li {
+    list-style: none;
 }
 
 body {
@@ -17,7 +28,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1F2937;
+    background-color: var(--dark-bg);
     color: #eee;
     padding-top: 20px;
     padding-left: var(--padding);
@@ -37,14 +48,11 @@ body {
 }
 
 .header-logo {
-    display: flex;
     font-size: 24px;
     font-weight: 800;
 }
 
 .header-links {
-    margin: 0;
-    padding: 0;
     display: flex;
     gap: 18px;
 }
@@ -64,13 +72,13 @@ a {
 
 .main-title {
     font-size: 48px;
-    color: #F9FAF8;
+    color: var(--light-text);
     font-weight: 900;
 }
 
 .main-subtext {
     font-size: 18px;
-    color: #E5E7EB;
+    color: var(--gray-text);
     padding-top: 12px;
     padding-bottom: 12px;
 }
@@ -81,8 +89,8 @@ a {
     align-items: center;
     width: 130px;
     height: 32px;
-    background-color: #3882F6;
-    color:#F9FAF8;
+    background-color: var(--blue);
+    color: var(--light-text);
     border-radius: 4px;
 }
 
@@ -105,7 +113,7 @@ a {
     font-size: 36px;
     font-weight: 900;
     padding: 40px;
-    color: #1F2937
+    color: var(--dark-bg)
 }
 
 .card-image {
@@ -119,6 +127,7 @@ a {
     display: flex;
     gap: 60px;
     margin-bottom: 90px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -135,25 +144,24 @@ a {
     font-weight: 450;
     color: gray;
     width: 130px;
-    flex-wrap: wrap;
 }
 
 .quote-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #E5E7EB;
+    background-color: var(--gray-text);
     padding-top: 100px;
     padding-bottom: 80px;
 }
 
 .quote-container {
-    width: 750px;
+    max-width: 750px;
 }
 
 .quote-body {
     font-size: 36px;
-    color: #1F2937;
+    color: var(--dark-bg);
     font-weight: 300;
     font-style: italic;
 }
@@ -174,7 +182,7 @@ a {
 
 .call-to-action-container {
     display: flex;
-    background-color: #3882F6;
+    background-color: var(--blue);
     border-radius: 8px;
     padding: 50px 150px;
     justify-content: space-between;
@@ -197,6 +205,7 @@ a {
     justify-content: center;
     align-items: center;
     border: 3px solid white;
+    color: white;
     border-radius: 8px;
     font-size: 20px;
     font-weight: 450;
@@ -209,7 +218,7 @@ a {
     align-items: center;
     justify-content: center;
     color: white; 
-    background-color: #1F2937;
+    background-color: var(--dark-bg);
     padding: 50px;
     font-weight: 350;
 }
