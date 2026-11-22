@@ -1,9 +1,10 @@
 :root {
     --padding: clamp(20px, 10vw, 200px);
-    --dark-bg: #1F2937;
-    --blue: #3882F6;
+    --dark-bg: #060c24;
+    --blue: #244881;
     --light-text: #F9FAF8;
     --gray-text: #E5E7EB;
+    --sign-up-hover: #3f64a8;
 }
 
 * {
@@ -11,6 +12,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+button {
+    cursor: pointer;
     border: none;
     appearance: none;
     background: none;
@@ -36,7 +41,7 @@ body {
 }
 
 .header {
-    background-color: #1F2937;
+    background-color: var(--dark-bg);
     color: #eee;
     display: flex;
     justify-content: space-between;
@@ -92,15 +97,18 @@ a {
     background-color: var(--blue);
     color: var(--light-text);
     border-radius: 4px;
+    font-size: 20px;
+}
+
+.header-signup-button:hover {
+    background-color: var(--sign-up-hover);
 }
 
 .image-placeholder {
     display: flex;
-    background-color: #6D747D;
-    height: 250px;
-    width: 500px;
-    align-items: center;
-    justify-content: center;
+    height: 275px;
+    width: 490px;
+    border-radius: 30px;
 }
 
 .info-card-section {
@@ -120,7 +128,8 @@ a {
     height: 150px;
     width: 150px;
     border-radius: 12px;
-    border: 3px solid #3478e4
+    border: 3px solid var(--blue);
+    background-color: #3f64a8;
 }
 
 .cards-container {
@@ -212,6 +221,11 @@ a {
     padding: 10px 50px;
     height: 40px;
 }
+
+.call-to-action-sign-up-button:hover {
+    background-color: var(--sign-up-hover);
+}
+
 
 .footer {
     display: flex;
