@@ -118,6 +118,7 @@ a {
     height: 275px;
     width: 490px;
     border-radius: 30px;
+    border: 4px solid var(--accent);
 }
 
 .info-card-section {
