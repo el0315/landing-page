@@ -1,0 +1,139 @@
+:root {
+  --padding: 100px;
+}
+
+* {
+    outline: 2px solid blue;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2937;
+    color: #eee;
+    padding-top: 20px;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+.header {
+    background-color: #1F2937;
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+.header-logo {
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.header-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 500px;
+}
+
+.main-title {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.main-subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.header-signup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 24px;
+    padding: 10px;
+    background-color: #3882F6;
+    color:#F9FAF8;
+    border-radius: 4px;
+}
+
+.image-placeholder {
+    display: flex;
+    background-color: #6D747D;
+    height: 250px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-card-section {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-title {
+    font-size: 36px;
+    font-weight: 900;
+    padding: 40px;
+    color: #1F2937
+}
+
+.card-image {
+    height: 150px;
+    width: 150px;
+    border-radius: 8px;
+    border: 3px solid #3478e4
+}
+
+.cards-container {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 90px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-caption {
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    width: 130px;
+    flex-wrap: wrap;
+}
